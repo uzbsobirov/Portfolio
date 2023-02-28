@@ -46,7 +46,7 @@ class CustomUserManager(UserManager):
                 backend, _ = backends[0]
             else:
                 raise ValueError(
-                    "You have multiple authentication backends configured and "
+                    "You have multiple registery backends configured and "
                     "therefore must provide the `backend` argument."
                 )
         elif not isinstance(backend, str):
